@@ -1,0 +1,52 @@
+<br><br>
+<div class="section-wrapper container">
+    <div class="row">
+        <div class="form-layout">
+            <div class="row">
+                <mdb-navbar SideClass="navbar navbar-dark indigo">
+                    <mdb-navbar-brand>
+                        <a class="navbar-brand" href="#" style="font-weight: bold;align-items: center;">
+                            Clinic System
+                        </a>
+
+                        <a class="navbar-brand" style="align-items: flex-end;color: white;">
+                            MyProfile
+                        </a>
+                    </mdb-navbar-brand>
+                </mdb-navbar>
+            </div><br><br>
+
+            <div class="col-sm">
+                <div class="table-responsive" id="my-table">
+                    <table class="table table-bordered table-md thead-dark ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">UserName</th>
+                                <th scope="col">MobileNumber</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">IsActive</th>
+                                <th scope="col">...</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>{{doctor.id}}</td>
+                                <td>{{doctor.userName}}</td>
+                                <td>{{doctor.mobileNumber}}</td>
+                                <td>{{doctor.email}}</td>
+                                <td>{{doctor.isActive}}</td>
+                                <td> <button class="btn btn-success" (click)="appointments()"> MyAppointments</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br />
+            <div class="card-footer pb-0 pt-3">
+            </div>
+        </div>
+    </div>
+</div>
